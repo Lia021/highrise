@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>lia altspace aframe 360</title>
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script> 
+  <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.3.0/dist/aframe-altspace-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene altspace=fullspace:true>
+  <a-assets></a-assets>
+   <!--sky-->
+  <a-sky radius="100" src="http://i.imgur.com/vWFWteD.jpg" segments-width="10" segments-height="6"></a-sky>
+  <!--cylinder-->
+  <a-cylinder color="#494A59" height="6.5" radius="1.4"position="-18 1 -10.60"></a-cylinder>
+  <!--ring-->
+  <a-torus color="#2B314D" arc="360" radius="2" radius-tubular="0.1"position="-18 6.5 -10.60"><a-animation attribute="rotation" dur="15000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+  </a-torus>
+  <a-torus color="#2B314D" arc="360" radius="2" radius-tubular="0.1"position="-18 6.5 -10.60"rotation="0 90 0"><a-animation attribute="rotation" dur="15000" fill="forwards" to="360 90 0" repeat="indefinite" easing="linear"></a-animation>
+  </a-torus>
+  <!--ball-->
+  <a-sphere src="http://i.imgur.com/uezJGWW.jpg" radius="1.55"position="-18 6.40 -10.60"><a-animation attribute="rotation" dur="15000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-sphere>  
+  <!--picture-->
+   <a-image src="http://i.imgur.com/yx6ztNe.png"position="-0.52 5.90 -14.90"width="1.65" height="0.90"></a-image>
+   <a-image src="http://i.imgur.com/GRjoqIm.png"position="-4.25 5.90 -14.90"width="1.65" height="0.90"></a-image>
+   <a-image src="http://i.imgur.com/VRlQmCU.png"position="3.20 5.90 -14.90"width="1.65" height="0.90"></a-image>
+   <a-image src="http://i.imgur.com/zJ23GRO.png"position="6.29 5.91 -12.75"width="1.67" height="0.90"rotation="0 90 0"></a-image>
+   <a-image src="http://i.imgur.com/hr38B84.png"position="6.29 5.91 -10.35"width="1.67" height="0.90"rotation="0 90 0"></a-image>
+      <a-image src="http://i.imgur.com/O9QHSnY.png"position="8.90 7.20 -13.88"width="1.65" height="0.90"></a-image>
+     <a-image src="http://i.imgur.com/NbmycGa.png"position="3.64 7.15 -6"width="2.30" height="0.99"rotation="0 90 0"></a-image>
+    <!--image-->
+  <a-image src="http://i.imgur.com/C3uyJN2.png" width="11.10" height="5"position="-31.65 7.30 1.90"rotation="0 90 0"></a-image>
+  <!--dimond-->
+  <a-octahedron src="http://i.imgur.com/IlxAyIA.jpg" radius="1.2"position="-22.50 2.10 11"><a-animation attribute="rotation" dur="15000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-octahedron>
+  <!--wall image2-->
+  <a-image src="http://i.imgur.com/byJlAzb.jpg"position="-11.50 7.49 11.12"width="2.2" height="4.38"rotation="0 24 0"></a-image>
+  <a-image src="http://i.imgur.com/wDBF6K4.png"position="6.45 0.70 10.65"width="2.80" height="1.55"rotation="0 -64 0"></a-image>
+  <!--telopoter wall image-->
+  <a-image src="http://i.imgur.com/9gGZSXJ.png"position="-31.95 2.15 1.85"width="14.65" height="3.50"rotation="0 90 0"></a-image>
+  <!--model-->
+  <a-assets>
+   <a-asset-item id="tree" src="https://rawgit.com/Lia021/skull-2/master/gistfile1.txt"></a-asset-item>
+   </a-assets>
+   <a-entity  position="-1 1.25 3.60"collada-model="#tree"rotation="0 90 0"></a-entity>
+  <!--model2-->
+  <a-assets>
+  <a-asset-item id="head" src="https://rawgit.com/Lia021/human-head/master/untitled6.dae"></a-asset-item>
+  </a-assets>
+  <a-entity  position="-0.53 1.20 3.60"collada-model="#head"rotation="0 90 0"></a-entity>
+    <!--model3-->
+  <a-assets>
+  <a-asset-item id="pig" src="https://rawgit.com/Lia021/pig-5/master/untitled2.dae"></a-asset-item>
+  </a-assets>
+  <a-entity  position="-11 0.40 -13"collada-model="#pig"rotation="0 -20 0"></a-entity>
+
+
+
+
+</body>
+</html>
