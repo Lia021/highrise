@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.76.0 commit date:2015-09-30, commit time:16:05, hash:fb78f6d</authoring_tool>
     </contributor>
-    <created>2017-01-07T19:27:09</created>
-    <modified>2017-01-07T19:27:09</modified>
+    <created>2017-01-07T19:46:37</created>
+    <modified>2017-01-07T19:46:37</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -107,7 +107,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Cone" name="Cone" type="NODE">
-        <matrix sid="transform">-0.04980725 0.001936001 0.003262587 -0.4891261 0.001565256 0.05996552 -5.21609e-4 0.411021 0.004096922 6.26195e-4 0.03986334 0.003465768 0 0 0 1</matrix>
+        <matrix sid="transform">-0.04983187 -5.14773e-5 -0.003277362 -0.48913 -4.35644e-9 -0.05999674 4.18871e-4 0.411021 -0.004096924 6.26195e-4 0.03986334 0.003465768 0 0 0 1</matrix>
         <instance_geometry url="#Cone-mesh" name="Cone">
           <bind_material>
             <technique_common>
